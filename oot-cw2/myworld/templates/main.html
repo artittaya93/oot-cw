@@ -1,0 +1,118 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Book Shop</title>
+        <meta name="description" content="Web Browser">
+        <meta name="keywords" content="Book Shop">
+        <meta name="author" content="Artittaya Kairung">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ 
+
+    <style>
+        body {
+            background-image: url("{% static 'darkbg.jpg' %}");
+            background-attachment: fixed;
+            background-size: contain;
+            background-repeat: repeat;
+        }
+        header{
+            text-align: center;
+
+        }
+        .p1{
+            float: left;    
+            margin: 0 15px 0 0;
+            padding: -2%;
+        }
+        .p2{
+            float: right;    
+            margin: 0 15px 0 0;
+        }
+        .searchbar{
+            width:50vw;
+            font-size: 20px;
+            position:relative;
+            margin: auto auto;
+            display: block;
+        }
+        nav {
+             width: 10%; 
+             float: left; 
+             height:50px;
+             position:fixed;
+             left:0px;
+             bottom:0px;
+             z-index: 99;
+        
+        }
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        nav li {
+            background-color: #EEEEEE;
+            margin: 2px;
+            padding: 10px;
+            border-radius: 5px;
+ 
+        }
+
+        nav a {
+            text-decoration: none;
+        }
+        .content{
+                margin: auto auto;
+                display: block;
+                text-align: center;
+                padding: 3%;
+             }
+
+    </style>
+ </head>
+
+ <body>
+     <!--Header-->  
+     <header>
+        <h1 style="color:aliceblue; font-size: xx-large;">WELCOME TO STATIONARY_WAREHOUSE</h1>
+           <p1>
+            <img src="{% static 'icons8-stationery-58.png' %}"; align="left">
+           </p1>
+           <p2>
+            <img src="{% static 'icons8-stationery-58.png' %}"; align="right">
+           </p2>
+     </header>
+     <div class=" searchbar" style="display: flex; justify-content:center; align-items:center">
+        <input class="searchbar" type="text" style="float:left; width:90%">
+        <a href="search/"><img src="{% static 'icons8-google-web-search-100.png' %}" style="height: 50px; width: 50px; margin-left: -2px;;" />
+     </div>
+     <nav>
+        <li><a href="login/" >Login</a></li>
+     </nav>
+     <div class="content">
+        <a href="pen/"><img src="{% static 'icons8-ball-point-pen-80.png' %}"></a>
+        <br><br>
+        <a href="book/"><img src="{% static 'icons8-spiral-bound-booklet-80.png'%}"></a>
+        <br><br>
+        <a href="eraser/"><img src="{% static 'icons8-eraser-80.png' %}"></a>
+        <br><br>
+        <a href="glue/"><img src="{% static 'icons8-glue-48.png' %}" style="height: 70px;"></a> 
+        <br><br>
+        <a href="scissors/"><img src="{% static 'icons8-scissors-96.png' %}"></a>
+        <br><br>
+        <a href="add/"><img src="{% static 'icons8-plus-key-64.png'%}" style="height: 70px;"></a>
+        <br><br>
+        <a href="remove/"><img src="{% static 'icons8-remove-64.png'%} " style="height:70px;"></a>
+
+
+     </div>
+
+
+ 
+
+ </body>
+
+</html>

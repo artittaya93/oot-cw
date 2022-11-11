@@ -1,0 +1,65 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+    <style>
+         body{
+            background-image: url("{% static 'darkbg.jpg' %}");
+            background-attachment: fixed;
+            background-size: contain;
+            background-repeat: repeat;    
+        }
+        .table, th, td{
+            border:1px solid white;
+        }
+        nav {
+            width: 10%; 
+             float: left; 
+             height:50px;
+             position:fixed;
+             left:0px;
+             bottom:0px;
+             z-index: 99;
+        }
+
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        nav li {
+            background-color: #EEEEEE;
+            margin: 2px;
+            padding: 10px;
+            border-radius: 5px;
+        }
+
+        nav a {
+            text-decoration: none;
+        }
+    </style>
+    
+    <table style="width:100%">
+        <tr>
+          <th style="color: #EEEEEE">ID</th>
+          <th style="color: #EEEEEE" >NAME</th>
+          <th style="color: #EEEEEE" >COUNT</th>
+        </tr>
+        <tr>
+          <td  style="color: #EEEEEE">850599</td>
+          <td style="color: #EEEEEE">Pink</td>
+          <td style="color: #EEEEEE">20 pieces</td>
+        </tr>
+        <tr>
+          <td style="color: #EEEEEE" >009879</td>
+          <td style="color: #EEEEEE">BLue</td>
+          <td style="color: #EEEEEE" >0 pieces</td>
+        </tr>
+      </table>
+    <nav>
+        <ul>
+           <li><a href="main.html">BACK</a></li>
+        </ul>
+    </nav>
+    
+</html>
